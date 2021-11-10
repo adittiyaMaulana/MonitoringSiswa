@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\OrangTuaController\OrangTuaController;
+use Database\Seeders\OrangTuaSeeder;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +22,19 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+// =============================================================================================================================
+// ============================================== OrangTua ===============================================================
+// ==========================================================================================================================
+Route::get('/homepage', [OrangTuaController::class, 'homepage']);
+Route::get('/jadwalKelas', [OrangTuaController::class, 'jadwalKelas']);
+Route::get('/jadwalNonAkademik', [OrangTuaController::class, 'jadwalNonAkademik']);
+Route::get('/finansial', [OrangTuaController::class, 'finansial']);
+Route::get('/berita', [OrangTuaController::class, 'berita']);
+Route::get('/nilai', [OrangTuaController::class, 'nilai']);
+Route::get('/kehadiran', [OrangTuaController::class, 'kehadiran']);
+Route::get('/fiturBantuan', [OrangTuaController::class, 'fiturBantuan']);
+Route::get('/tentangSekolah', [OrangTuaController::class, 'tentangSekolah']);
+Route::get('/pesan', [OrangTuaController::class, 'pesan']);
+Route::get('/pusatBantuan', [OrangTuaController::class, 'pusatBantuan']);
