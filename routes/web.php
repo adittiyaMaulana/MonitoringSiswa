@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GuruController\GuruController;
 use App\Http\Controllers\OrangTuaController\OrangTuaController;
 use Database\Seeders\OrangTuaSeeder;
 use Illuminate\Support\Facades\Route;
@@ -48,7 +49,10 @@ Route::get('/pusatBantuan', [OrangTuaController::class, 'pusatBantuan']);
 // ============================================== Guru ===============================================================
 // ==========================================================================================================================
 
-// code untuk guru
+Route::get('/homepageguru', [GuruController::class, 'homepageGuru']);
+Route::get('/nilaisiswa', [GuruController::class, 'nilaiSiswa']);
+Route::get('/kehadiransiswa', [GuruController::class, 'kehadiranSiswa']);
+Route::get('/pusatbantuanguru', [GuruController::class, 'pusatBantuanGuru']);
 
 // *%*%*%*%*%**%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%%*%*%*%%*%*%%*%*%*%%*%*%*%%*%*%*%%*%*%**%*%**%*%*%**%*%*%*%**%*%*%*%*
 // *%*%*%*%*%**%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%%*%*%*%%*%*%%*%*%*%%*%*%*%%*%*%*%%*%*%**%*%**%*%*%**%*%*%*%**%*%*%*%*

@@ -20,8 +20,8 @@
     <!-- sidebar -->
     <div class="sidebar">
         <ul>
-            <li class="list active">
-                <a href="/homepage">
+            <li class="list">
+                <a href="/homepageguru">
                     <span class="icon">
                         <ion-icon name="home-outline"></ion-icon>
                     </span>
@@ -29,68 +29,24 @@
                 </a>
             </li>
 
-            <li class="list">
-                <a href="/jadwalKelas">
-                    <span class="icon">
-                        <ion-icon name="calendar-outline"></ion-icon>
-                    </span>
-                    <span class="title">Jadwal</span>
-                </a>
-            </li>
-
-            <li class="list">
-                <a href="/finansial">
-                    <span class="icon">
-                        <ion-icon name="wallet-outline"></ion-icon>
-                    </span>
-                    <span class="title">Finansial</span>
-                </a>
-            </li>
-
-            <li class="list">
-                <a href="/berita">
-                    <span class="icon">
-                        <ion-icon name="newspaper-outline"></ion-icon>
-                    </span>
-                    <span class="title">Berita</span>
-                </a>
-            </li>
-
-            <li class="list">
-                <a href="/nilai">
+            <li class="list active">
+                <a href="/nilaisiswa">
                     <span class="icon">
                         <ion-icon name="bar-chart-outline"></ion-icon>
                     </span>
-                    <span class="title">Nilai</span>
+                    <span class="title">Nilai Siswa</span>
                 </a>
             </li>
 
             <li class="list">
-                <a href="/kehadiran">
+                <a href="/kehadiransiswa">
                     <span class="icon">
                         <ion-icon name="create-outline"></ion-icon>
                     </span>
-                    <span class="title">Kehadiran</span>
+                    <span class="title">Kehadiran Siswa</span>
                 </a>
             </li>
 
-            <li class="list">
-                <a href="/fiturBantuan">
-                    <span class="icon">
-                        <ion-icon name="download-outline"></ion-icon>
-                    </span>
-                    <span class="title">Fitur Bantuan</span>
-                </a>
-            </li>
-
-            <li class="list">
-                <a href="/tentangSekolah">
-                    <span class="icon">
-                        <ion-icon name="alert-circle-outline"></ion-icon>
-                    </span>
-                    <span class="title">Tentang</span>
-                </a>
-            </li>
 
             <li class="list">
                 <a href="#">
@@ -125,16 +81,9 @@
                 <!-- Right elements -->
                 <div class="d-flex align-items-center">
                     <!-- Icon pengaduan -->
-                    <a class=" d-flex align-items-center mr-3 mt-2" href="/pusatBantuan">
+                    <a class=" d-flex align-items-center mr-3 mt-2" href="/pusatbantuanguru">
                         <span class="icon">
                             <ion-icon name="chatbox-ellipses" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
-                        </span>
-                    </a>
-
-                    <!-- Icon pesan -->
-                    <a class=" d-flex align-items-center mr-3 mt-2" href="/pesan">
-                        <span class="icon">
-                            <ion-icon name="mail" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
                         </span>
                     </a>
 
