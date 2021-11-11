@@ -11,6 +11,9 @@
 
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/admin/homepageAdmin.css">
+    <link rel="stylesheet" href="css/admin/jadwal.css">
+
     <title>Home</title>
 </head>
 
@@ -20,7 +23,7 @@
     <div class="sidebar">
         <ul>
             <li class="list">
-                <a href="/homepageGuru">
+                <a href="/homepageAdmin">
                     <span class="icon">
                         <ion-icon name="home-outline"></ion-icon>
                     </span>
@@ -28,24 +31,59 @@
                 </a>
             </li>
 
-            <li class="list">
-                <a href="/nilaiSiswa">
-                    <span class="icon">
-                        <ion-icon name="bar-chart-outline"></ion-icon>
-                    </span>
-                    <span class="title">Nilai Siswa</span>
-                </a>
-            </li>
-
             <li class="list active">
-                <a href="/kehadiranSiswa">
+                <a href="/jadwalKelasSiswa">
                     <span class="icon">
-                        <ion-icon name="create-outline"></ion-icon>
+                        <ion-icon name="calendar-outline"></ion-icon>
                     </span>
-                    <span class="title">Kehadiran Siswa</span>
+                    <span class="title">Jadwal</span>
                 </a>
             </li>
 
+            <li class="list">
+                <a href="/finansialSiswa">
+                    <span class="icon">
+                        <ion-icon name="wallet-outline"></ion-icon>
+                    </span>
+                    <span class="title">Finansial</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="/berita">
+                    <span class="icon">
+                        <ion-icon name="newspaper-outline"></ion-icon>
+                    </span>
+                    <span class="title">Berita</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="/data">
+                    <span class="icon">
+                        <ion-icon name="clipboard-outline"></ion-icon>
+                    </span>
+                    <span class="title">Data</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="/dokumenFiturBantuan">
+                    <span class="icon">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </span>
+                    <span class="title">Fitur Bantuan</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="/tentangSekolah">
+                    <span class="icon">
+                        <ion-icon name="alert-circle-outline"></ion-icon>
+                    </span>
+                    <span class="title">Tentang</span>
+                </a>
+            </li>
 
             <li class="list">
                 <a href="#">
@@ -73,19 +111,26 @@
                 <div class="collapse navbar-collapse">
                     <!-- Navbar brand -->
                     <a class="navbar-brand mt-2">
-                        <h4>Kehadiran Siswa</h4>
+                        <h4>Jadwal</h4>
                     </a>
                 </div>
 
                 <!-- Right elements -->
                 <div class="d-flex align-items-center">
                     <!-- Icon pengaduan -->
-                    <a class=" d-flex align-items-center mr-3 mt-2" href="/pusatBantuanGuru">
+                    <a class=" d-flex align-items-center mr-3 mt-2" href="/pusatBantuanAdmin">
                         <span class="icon">
                             <ion-icon name="chatbox-ellipses" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
                         </span>
                     </a>
- 
+                    
+                    <!-- Icon pesan -->
+                    <a class=" d-flex align-items-center mr-3 mt-2" href="/pesanAdmin">
+                        <span class="icon">
+                            <ion-icon name="mail" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
+                        </span>
+                    </a>
+
                     <!-- gambar user -->
                     <a class=" d-flex align-items-center">
                         <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-circle" height="25" alt="" loading="lazy" />
@@ -93,12 +138,21 @@
 
                     <!-- nama user -->
                     <a class=" d-flex align-items-center ml-3 mt-3" style="text-decoration: none; color: #404040;">
-                        <p>user</p>
+                        <p>Admin</p>
                     </a>
 
                 </div>
             </div>
         </nav>
+
+        <!-- nav pilihan -->
+        <div class="navbar">
+            <ul>
+                <li class="isi"><a class="active" href="/jadwalKelasSiswa">Akademik</a></li>
+                <li class="isi"><a href="/jadwalNonAkademikSiswa">Non Akademik</a></li>
+            </ul>
+        </div>
+
 
 
 

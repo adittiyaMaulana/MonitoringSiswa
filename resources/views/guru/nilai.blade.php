@@ -20,7 +20,7 @@
     <div class="sidebar">
         <ul>
             <li class="list">
-                <a href="/homepageguru">
+                <a href="/homepageGuru">
                     <span class="icon">
                         <ion-icon name="home-outline"></ion-icon>
                     </span>
@@ -29,7 +29,7 @@
             </li>
 
             <li class="list active">
-                <a href="/nilaisiswa">
+                <a href="/nilaiSiswa">
                     <span class="icon">
                         <ion-icon name="bar-chart-outline"></ion-icon>
                     </span>
@@ -38,7 +38,7 @@
             </li>
 
             <li class="list">
-                <a href="/kehadiransiswa">
+                <a href="/kehadiranSiswa">
                     <span class="icon">
                         <ion-icon name="create-outline"></ion-icon>
                     </span>
@@ -80,7 +80,7 @@
                 <!-- Right elements -->
                 <div class="d-flex align-items-center">
                     <!-- Icon pengaduan -->
-                    <a class=" d-flex align-items-center mr-3 mt-2" href="/pusatbantuanguru">
+                    <a class=" d-flex align-items-center mr-3 mt-2" href="/pusatBantuanGuru">
                         <span class="icon">
                             <ion-icon name="chatbox-ellipses" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
                         </span>

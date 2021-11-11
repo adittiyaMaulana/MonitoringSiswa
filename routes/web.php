@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController\AdminController;
 use App\Http\Controllers\GuruController\GuruController;
 use App\Http\Controllers\OrangTuaController\OrangTuaController;
 use Database\Seeders\OrangTuaSeeder;
@@ -49,10 +50,10 @@ Route::get('/pusatBantuan', [OrangTuaController::class, 'pusatBantuan']);
 // ============================================== Guru ===============================================================
 // ==========================================================================================================================
 
-Route::get('/homepageguru', [GuruController::class, 'homepageGuru']);
-Route::get('/nilaisiswa', [GuruController::class, 'nilaiSiswa']);
-Route::get('/kehadiransiswa', [GuruController::class, 'kehadiranSiswa']);
-Route::get('/pusatbantuanguru', [GuruController::class, 'pusatBantuanGuru']);
+Route::get('/homepageGuru', [GuruController::class, 'homepageGuru']);
+Route::get('/nilaiSiswa', [GuruController::class, 'nilaiSiswa']);
+Route::get('/kehadiranSiswa', [GuruController::class, 'kehadiranSiswa']);
+Route::get('/pusatBantuanGuru', [GuruController::class, 'pusatBantuanGuru']);
 
 // *%*%*%*%*%**%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%%*%*%*%%*%*%%*%*%*%%*%*%*%%*%*%*%%*%*%**%*%**%*%*%**%*%*%*%**%*%*%*%*
 // *%*%*%*%*%**%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%%*%*%*%%*%*%%*%*%*%%*%*%*%%*%*%*%%*%*%**%*%**%*%*%**%*%*%*%**%*%*%*%*
@@ -62,7 +63,8 @@ Route::get('/pusatbantuanguru', [GuruController::class, 'pusatBantuanGuru']);
 // ============================================== Admin ===============================================================
 // ==========================================================================================================================
 
-// code untuk admin
+Route::get('/homepageAdmin', [AdminController::class, 'homepageAdmin']);
+Route::get('/jadwalKelasSiswa', [AdminController::class, 'jadwalKelasSiswa']);
 
 
 // *%*%*%*%*%**%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%%*%*%*%%*%*%%*%*%*%%*%*%*%%*%*%*%%*%*%**%*%**%*%*%**%*%*%*%**%*%*%*%*
