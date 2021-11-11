@@ -16,6 +16,9 @@ class CreateGuruTable extends Migration
         Schema::create('guru', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('nama',50);
+            $table->date('tll');
+            $table->string('alamat',255);
         });
     }
 
