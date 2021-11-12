@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/content.css">
     <link rel="stylesheet" href="css/admin/homepageAdmin.css">
     <link rel="stylesheet" href="css/admin/jadwal.css">
-    <link rel="stylesheet" href="css/admin/finansial.css">
 
     <!-- Table -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -26,7 +25,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 
-    <title>Finansial</title>
+    <title>Jadwal Non-Akademik Siswa</title>
 </head>
 
 <body>
@@ -43,7 +42,7 @@
                 </a>
             </li>
 
-            <li class="list">
+            <li class="list active">
                 <a href="/jadwalKelasSiswa">
                     <span class="icon">
                         <ion-icon name="calendar-outline"></ion-icon>
@@ -52,7 +51,7 @@
                 </a>
             </li>
 
-            <li class="list active">
+            <li class="list">
                 <a href="/finansialSiswa">
                     <span class="icon">
                         <ion-icon name="wallet-outline"></ion-icon>
@@ -62,7 +61,7 @@
             </li>
 
             <li class="list">
-                <a href="/beritaAdmin">
+                <a href="/berita">
                     <span class="icon">
                         <ion-icon name="newspaper-outline"></ion-icon>
                     </span>
@@ -123,7 +122,7 @@
                 <div class="collapse navbar-collapse">
                     <!-- Navbar brand -->
                     <a class="navbar-brand mt-2">
-                        <h4>Finansial Siswa</h4>
+                        <h4>Jadwal</h4>
                     </a>
                 </div>
 
@@ -157,88 +156,97 @@
             </div>
         </nav>
 
-
-        <!-- buttonn -->
-        <div class="button_area">
-            <a href="#"><button type="button" class="btn btn-primary">Kirim<i class="bi bi-send-fill ml-4"></i></button></a>
-            <a href="/formFinansial"><button type="button" class="btn btn-success">Tambah Data<i class="bi bi-plus ml-2"></i></button></a>
+        <!-- nav pilihan -->
+        <div class="navbar">
+            <ul>
+                <li class="isi"><a href="/jadwalKelasSiswa">Akademik</a></li>
+                <li class="isi"><a class="active" href="/jadwalNonAkademikSiswa">Non Akademik</a></li>
+            </ul>
         </div>
 
-        <!-- table -->
-
-        <div class="my-table ml-3">
-            <table id="example" class="table table-hover" style="width:100%">
-                <thead class="table-dark">
-                    <tr>
-                        <th>Kelas</th>
-                        <th>Semester</th>
-                        <th>Office</th>
-                        <th>Age</th>
-                        <th>Start date</th>
-                        <th>Salary</th>
-                        <th>Salary</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Kelas 7</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>67</td>
-                        <td>2011/04/25</td>
-                        <td>$320,800</td>
-                        <td>$320,800</td>
-                    </tr>
-                    <tr>
-                        <td>Kelas 9</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>56</td>
-                        <td>2011/04/25</td>
-                        <td>$320,800</td>
-                        <td>$320,800</td>
-                    </tr>
-                    <tr>
-                        <td>Kelas 9</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>66</td>
-                        <td>2011/04/25</td>
-                        <td>$320,800</td>
-                        <td>$320,800</td>
-                    </tr>
-                    <tr>
-                        <td>Kelas 8</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>20</td>
-                        <td>2011/04/25</td>
-                        <td>$320,800</td>
-                        <td>$320,800</td>
-                    </tr>
-                    <tr>
-                        <td>Kelas 7</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>1</td>
-                        <td>2011/04/25</td>
-                        <td>$320,800</td>
-                        <td>$320,800</td>
-                    </tr>
-                    <tr>
-                        <td>Kelas 9</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>6</td>
-                        <td>2011/04/25</td>
-                        <td>$320,800</td>
-                        <td>$320,800</td>
-                    </tr>
-
-                </tbody>
-            </table>
+        <!-- isi kontent -->
+        <div class="isi_konten">
+            <!-- buttonn -->
+            <div class="button_area ml-2 mb-4">
+                <a href="#"><button type="button" class="btn btn-primary">Kirim<i class="bi bi-send-fill ml-4"></i></button></a>
+                <a href="/formNonAkademikSiswa"><button type="button" class="btn btn-success">Tambah Data<i class="bi bi-plus ml-2"></i></button></a>
+            </div>
+    
+            <!-- table -->
+    
+            <div class="my-table ml-3">
+                <table id="example" class="table table-hover" style="width:100%">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Kelas</th>
+                            <th>Semester</th>
+                            <th>Office</th>
+                            <th>Age</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                            <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kelas 7</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>67</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                            <td>$320,800</td>
+                        </tr>
+                        <tr>
+                            <td>Kelas 9</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>56</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                            <td>$320,800</td>
+                        </tr>
+                        <tr>
+                            <td>Kelas 9</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>66</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                            <td>$320,800</td>
+                        </tr>
+                        <tr>
+                            <td>Kelas 8</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>20</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                            <td>$320,800</td>
+                        </tr>
+                        <tr>
+                            <td>Kelas 7</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>1</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                            <td>$320,800</td>
+                        </tr>
+                        <tr>
+                            <td>Kelas 9</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>6</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                            <td>$320,800</td>
+                        </tr>
+    
+                    </tbody>
+                </table>
+            </div>
         </div>
-
 
 
 
@@ -277,8 +285,6 @@
             $("#example").DataTable();
         });
     </script>
-    
-
 </body>
 
 </html>
