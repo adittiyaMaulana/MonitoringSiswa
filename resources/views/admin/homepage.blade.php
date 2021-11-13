@@ -49,7 +49,7 @@
             </li>
 
             <li class="list">
-                <a href="/berita">
+                <a href="/beritaAdmin">
                     <span class="icon">
                         <ion-icon name="newspaper-outline"></ion-icon>
                     </span>

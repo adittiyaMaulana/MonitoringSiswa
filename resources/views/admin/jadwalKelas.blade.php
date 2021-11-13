@@ -14,7 +14,18 @@
     <link rel="stylesheet" href="css/admin/homepageAdmin.css">
     <link rel="stylesheet" href="css/admin/jadwal.css">
 
-    <title>Home</title>
+    <!-- Table -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
+    <!--  -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+
+    <title>Jadwal Kelas Siswa</title>
 </head>
 
 <body>
@@ -123,7 +134,7 @@
                             <ion-icon name="chatbox-ellipses" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
                         </span>
                     </a>
-                    
+
                     <!-- Icon pesan -->
                     <a class=" d-flex align-items-center mr-3 mt-2" href="/pesanAdmin">
                         <span class="icon">
@@ -153,6 +164,90 @@
             </ul>
         </div>
 
+        <!-- isi kontent -->
+        <div class="isi_konten">
+            <!-- buttonn -->
+            <div class="button_area ml-2 mb-4">
+                <a href="#"><button type="button" class="btn btn-primary">Kirim<i class="bi bi-send-fill ml-4"></i></button></a>
+                <a href="/formKelasSiswa"><button type="button" class="btn btn-success">Tambah Data<i class="bi bi-plus ml-2"></i></button></a>
+            </div>
+    
+            <!-- table -->
+    
+            <div class="my-table ml-3">
+                <table id="example" class="table table-hover" style="width:100%">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Kelas</th>
+                            <th>Semester</th>
+                            <th>Office</th>
+                            <th>Age</th>
+                            <th>Start date</th>
+                            <th>Salary</th>
+                            <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kelas 7</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>67</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                            <td>$320,800</td>
+                        </tr>
+                        <tr>
+                            <td>Kelas 9</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>56</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                            <td>$320,800</td>
+                        </tr>
+                        <tr>
+                            <td>Kelas 9</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>66</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                            <td>$320,800</td>
+                        </tr>
+                        <tr>
+                            <td>Kelas 8</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>20</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                            <td>$320,800</td>
+                        </tr>
+                        <tr>
+                            <td>Kelas 7</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>1</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                            <td>$320,800</td>
+                        </tr>
+                        <tr>
+                            <td>Kelas 9</td>
+                            <td>System Architect</td>
+                            <td>Edinburgh</td>
+                            <td>6</td>
+                            <td>2011/04/25</td>
+                            <td>$320,800</td>
+                            <td>$320,800</td>
+                        </tr>
+    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
 
 
 
@@ -166,10 +261,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-   
+
     <script>
         // menambahkan active class di select list item (agar bisa di select)
         let list = document.querySelectorAll(".list");
@@ -182,6 +277,13 @@
                 list[i].className = "list active";
             };
         }
+    </script>
+
+    <!-- untuk table -->
+    <script>
+        $(document).ready(function() {
+            $("#example").DataTable();
+        });
     </script>
 </body>
 

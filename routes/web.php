@@ -64,7 +64,33 @@ Route::get('/pusatBantuanGuru', [GuruController::class, 'pusatBantuanGuru']);
 // ==========================================================================================================================
 
 Route::get('/homepageAdmin', [AdminController::class, 'homepageAdmin']);
+
+// jadwal
+// jadwal kelas
 Route::get('/jadwalKelasSiswa', [AdminController::class, 'jadwalKelasSiswa']);
+Route::get('/formKelasSiswa', [AdminController::class, 'formKelasSiswa']);
+
+// jadwal non
+Route::get('/jadwalNonAkademikSiswa', [AdminController::class, 'jadwalNonAkademikSiswa']);
+Route::get('/formNonAkademikSiswa', [AdminController::class, 'formNonAkademikSiswa']);
+
+// Finansial
+Route::get('/finansialSiswa', [AdminController::class, 'finansialSiswa']);
+Route::get('/formFinansial', [AdminController::class, 'formFinansial']);
+
+// berita
+Route::get('/beritaAdmin', [AdminController::class, 'beritaAdmin']);
+Route::get('/formBerita', [AdminController::class, 'formBerita']);
+
+// data siswa
+Route::get('/data', [AdminController::class, 'data']);
+Route::get('/formData', [AdminController::class, 'formData']);
+
+// fitur bantuan
+Route::get('/dokumenFiturBantuan', [AdminController::class, 'dokumenFiturBantuan']);
+Route::get('/formFiturBantuan', [AdminController::class, 'formFiturBantuan']);
+
+
 
 
 // *%*%*%*%*%**%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%%*%*%*%%*%*%%*%*%*%%*%*%*%%*%*%*%%*%*%**%*%**%*%*%**%*%*%*%**%*%*%*%*
