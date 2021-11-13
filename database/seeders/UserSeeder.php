@@ -13,6 +13,19 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $users = [
+            [
+                'nama' => "Darmi",
+                'email' => "darmi@gmail.com",
+                'password' => "password",
+                'role' => "user"
+            ],[
+                'nama' => "Sutomo",
+                'email' => "sutomo@gmail.com",
+                'password' => "password",
+                'role' => "user"
+            ]
+        ];
+        \DB::table('users')->insert($users);
     }
 }

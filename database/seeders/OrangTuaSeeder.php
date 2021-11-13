@@ -13,6 +13,17 @@ class OrangTuaSeeder extends Seeder
      */
     public function run()
     {
-        //
+        $orang_tua = [
+            [
+                'nama' => "Darmi",
+                'ttl' => "07/13/1980",
+                'alamat' => "Jl. Cendrawasih"
+            ],[
+                'nama' => "Sutomo",
+                'ttl' => "07/13/1970",
+                'alamat' => "Jl. Merak"
+            ]
+        ];
+        \DB::table('orang_tua')->insert($orang_tua);
     }
 }
