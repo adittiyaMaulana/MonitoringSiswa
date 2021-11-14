@@ -11,9 +11,6 @@
 
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/content.css">
-    <link rel="stylesheet" href="css/admin/homepageAdmin.css">
-    <link rel="stylesheet" href="css/admin/jadwal.css">
-    <link rel="stylesheet" href="css/admin/form.css">
 
     <!-- Table -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -26,16 +23,18 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 
-    <title>Form Berita</title>
+    <title>Update Kehadiran Siswa</title>
 </head>
 
 <body>
+
+
     <!-- ============================================================================================= -->
     <!-- sidebar -->
     <div class="sidebar">
         <ul>
             <li class="list">
-                <a href="/homepageAdmin">
+                <a href="/homepageGuru">
                     <span class="icon">
                         <ion-icon name="home-outline"></ion-icon>
                     </span>
@@ -44,58 +43,23 @@
             </li>
 
             <li class="list">
-                <a href="/jadwalKelasSiswa">
+                <a href="/nilaiSiswa">
                     <span class="icon">
-                        <ion-icon name="calendar-outline"></ion-icon>
+                        <ion-icon name="bar-chart-outline"></ion-icon>
                     </span>
-                    <span class="title">Jadwal</span>
-                </a>
-            </li>
-
-            <li class="list">
-                <a href="/finansialSiswa">
-                    <span class="icon">
-                        <ion-icon name="wallet-outline"></ion-icon>
-                    </span>
-                    <span class="title">Finansial</span>
+                    <span class="title">Nilai Siswa</span>
                 </a>
             </li>
 
             <li class="list active">
-                <a href="/beritaAdmin">
+                <a href="/kehadiranSiswa">
                     <span class="icon">
-                        <ion-icon name="newspaper-outline"></ion-icon>
+                        <ion-icon name="create-outline"></ion-icon>
                     </span>
-                    <span class="title">Berita</span>
+                    <span class="title">Kehadiran Siswa</span>
                 </a>
             </li>
 
-            <li class="list">
-                <a href="/data">
-                    <span class="icon">
-                        <ion-icon name="clipboard-outline"></ion-icon>
-                    </span>
-                    <span class="title">Data</span>
-                </a>
-            </li>
-
-            <li class="list">
-                <a href="/dokumenFiturBantuan">
-                    <span class="icon">
-                        <ion-icon name="download-outline"></ion-icon>
-                    </span>
-                    <span class="title">Fitur Bantuan</span>
-                </a>
-            </li>
-
-            <li class="list">
-                <a href="/tentangSekolahAdmin">
-                    <span class="icon">
-                        <ion-icon name="alert-circle-outline"></ion-icon>
-                    </span>
-                    <span class="title">Tentang</span>
-                </a>
-            </li>
 
             <li class="list">
                 <a href="#">
@@ -123,23 +87,16 @@
                 <div class="collapse navbar-collapse">
                     <!-- Navbar brand -->
                     <a class="navbar-brand mt-2">
-                        <h4>Pengumuman</h4>
+                        <h4>Update Kehadiran Siswa</h4>
                     </a>
                 </div>
 
                 <!-- Right elements -->
                 <div class="d-flex align-items-center">
                     <!-- Icon pengaduan -->
-                    <a class=" d-flex align-items-center mr-3 mt-2" href="/pusatBantuanAdmin">
+                    <a class=" d-flex align-items-center mr-3 mt-2" href="/pusatBantuanGuru">
                         <span class="icon">
                             <ion-icon name="chatbox-ellipses" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
-                        </span>
-                    </a>
-
-                    <!-- Icon pesan -->
-                    <a class=" d-flex align-items-center mr-3 mt-2" href="/pesanAdmin">
-                        <span class="icon">
-                            <ion-icon name="mail" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
                         </span>
                     </a>
 
@@ -150,15 +107,14 @@
 
                     <!-- nama user -->
                     <a class=" d-flex align-items-center ml-3 mt-3" style="text-decoration: none; color: #404040;">
-                        <p>Admin</p>
+                        <p>user</p>
                     </a>
 
                 </div>
             </div>
         </nav>
 
-        <!-- form -->
-        <div class="form">
+        <div class="form mt-5 ml-4 mr-4">
             <form>
                 <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -176,17 +132,26 @@
                     <label for="exampleInputPassword1" class="form-label">Password</label>
                     <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
-
-                <div class="input-group mb-3">
-                    <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>
-
-
-
 
 
 
@@ -217,14 +182,6 @@
             };
         }
     </script>
-
-    <!-- untuk table -->
-    <script>
-        $(document).ready(function() {
-            $("#example").DataTable();
-        });
-    </script>
-
 
 </body>
 

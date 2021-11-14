@@ -23,6 +23,11 @@ class AdminController extends Controller
         return view('admin.form.menambahkanData.formKelasSiswa');
     }
     
+    public function formUpdateKelasSiswa()
+    {
+        return view('admin.form.memperbaruiData.formMemperbaruiJadwalKelas');
+    }
+    
     // jadwal non akademik
     public function jadwalNonAkademikSiswa()
     {
@@ -33,18 +38,28 @@ class AdminController extends Controller
     {
         return view('admin.form.menambahkanData.formNonAkademikSiswa');
     }
-
+    
+    public function formUpdateJadwalNonAkademik()
+    {
+        return view('admin.form.memperbaruiData.formMemperbaruiJadwalNonAkademik');
+    }
+    
     // finansiall
     public function finansialSiswa()
     {
         return view('admin.finansialSiswa');
     }
-
+    
     public function formFinansial()
     {
         return view('admin.formFinansial');
     }
-
+    
+    public function formUpdateFinansial()
+    {
+        return view('admin.form.memperbaruiData.formMemperbaruiFinansial');
+    }
+    
     // beritaAdmin
     public function beritaAdmin()
     {
@@ -55,30 +70,49 @@ class AdminController extends Controller
     {
         return view('admin.form.menambahkanData.formBerita');
     }
-
+    
+    public function formUpdateBerita()
+    {
+        return view('admin.form.memperbaruiData.formMemperbaruiBerita');
+    }
+    
     // data siswaaaaa
     public function data()
     {
         return view('admin.data');
     }
-
+    
     public function formData()
     {
         return view('admin.form.menambahkanData.formDataSiswa');
     }
-
+    
+    public function formUpdateData()
+    {
+        return view('admin.form.memperbaruiData.formMemperbaruiDataSiswa');
+    }
+    
     // fitur bantuannnnn
     public function dokumenFiturBantuan()
     {
         return view('admin.fiturBantuan');
     }
-
+    
     public function formFiturBantuan()
     {
         return view('admin.form.menambahkanData.formFiturBantuan');
     }
-
+    
+    public function formUpdateFiturBantuan()
+    {
+        return view('admin.form.memperbaruiData.formMemperbaruiFiturBantuan');
+    }
+    
     // fitur tentang sekolah
+    public function tentangSekolahAdmin()
+    {
+        return view('admin.tentang');
+    }
 
     // fitur pusat bantuan
 

@@ -76,7 +76,7 @@
             </li>
 
             <li class="list">
-                <a href="/tentangSekolah">
+                <a href="/tentangSekolahAdmin">
                     <span class="icon">
                         <ion-icon name="alert-circle-outline"></ion-icon>
                     </span>

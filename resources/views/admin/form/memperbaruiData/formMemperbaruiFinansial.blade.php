@@ -26,7 +26,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 
-    <title>Form Berita</title>
+    <title>Form Update Finansial</title>
 </head>
 
 <body>
@@ -52,7 +52,7 @@
                 </a>
             </li>
 
-            <li class="list">
+            <li class="list active">
                 <a href="/finansialSiswa">
                     <span class="icon">
                         <ion-icon name="wallet-outline"></ion-icon>
@@ -61,7 +61,7 @@
                 </a>
             </li>
 
-            <li class="list active">
+            <li class="list">
                 <a href="/beritaAdmin">
                     <span class="icon">
                         <ion-icon name="newspaper-outline"></ion-icon>
@@ -123,7 +123,7 @@
                 <div class="collapse navbar-collapse">
                     <!-- Navbar brand -->
                     <a class="navbar-brand mt-2">
-                        <h4>Pengumuman</h4>
+                        <h4>Form Update Finansial</h4>
                     </a>
                 </div>
 
@@ -177,9 +177,6 @@
                     <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
 
-                <div class="input-group mb-3">
-                    <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-                </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
@@ -216,13 +213,6 @@
                 list[i].className = "list active";
             };
         }
-    </script>
-
-    <!-- untuk table -->
-    <script>
-        $(document).ready(function() {
-            $("#example").DataTable();
-        });
     </script>
 
 

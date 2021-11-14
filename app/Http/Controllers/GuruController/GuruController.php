@@ -12,14 +12,27 @@ class GuruController extends Controller
         return view('guru.homepage');
     }
 
+    // nilaiSiswa
+
     public function nilaiSiswa()
     {
-        return view('guru.nilai');
+        return view('guru.nilaiSiswa');
     }
 
+    public function updateNilaiSiswa()
+    {
+        return view('guru.form.formUpdateNilai');
+    }
+
+    // kehadiran siswa
     public function kehadiranSiswa()
     {
-        return view('guru.kehadiran');
+        return view('guru.kehadiranSiswa');
+    }
+
+    public function updatekehadiranSiswa()
+    {
+        return view('guru.form.formUpdateKehadiran');
     }
 
     public function pusatBantuanGuru()
