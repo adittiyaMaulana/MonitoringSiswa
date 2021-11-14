@@ -31,6 +31,12 @@
 </head>
 
 <body>
+    <!-- css untuk bagian click pada row table -->
+    <style>
+        [data-href] {
+            cursor: pointer;
+        }
+    </style>
     <!-- ============================================================================================= -->
     <!-- sidebar -->
     <div class="sidebar">
@@ -90,7 +96,7 @@
             </li>
 
             <li class="list">
-                <a href="/tentangSekolah">
+                <a href="/tentangSekolahAdmin">
                     <span class="icon">
                         <ion-icon name="alert-circle-outline"></ion-icon>
                     </span>
@@ -167,8 +173,8 @@
 
         <!-- table -->
 
-        <div class="my-table ml-3">
-            <table id="example" class="table table-hover" style="width:100%">
+        <div class="my-table mt-5 ml-3">
+            <table id="mytable" class="table table-hover" style="width:100%">
                 <thead class="table-dark">
                     <tr>
                         <th>Kelas</th>
@@ -181,8 +187,8 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Kelas 7</td>
+                    <tr data-href="/formUpdateFiturBantuan">
+                        <td>7-1</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
                         <td>67</td>
@@ -190,8 +196,8 @@
                         <td>$320,800</td>
                         <td>$320,800</td>
                     </tr>
-                    <tr>
-                        <td>Kelas 9</td>
+                    <tr data-href="/formUpdateFiturBantuan">
+                        <td>9-3</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
                         <td>56</td>
@@ -199,8 +205,8 @@
                         <td>$320,800</td>
                         <td>$320,800</td>
                     </tr>
-                    <tr>
-                        <td>Kelas 9</td>
+                    <tr data-href="/formUpdateFiturBantuan">
+                        <td>9-2</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
                         <td>66</td>
@@ -208,8 +214,8 @@
                         <td>$320,800</td>
                         <td>$320,800</td>
                     </tr>
-                    <tr>
-                        <td>Kelas 8</td>
+                    <tr data-href="/formUpdateFiturBantuan">
+                        <td>8-1</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
                         <td>20</td>
@@ -217,8 +223,8 @@
                         <td>$320,800</td>
                         <td>$320,800</td>
                     </tr>
-                    <tr>
-                        <td>Kelas 7</td>
+                    <tr data-href="/formUpdateFiturBantuan">
+                        <td>7-2</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
                         <td>1</td>
@@ -226,8 +232,8 @@
                         <td>$320,800</td>
                         <td>$320,800</td>
                     </tr>
-                    <tr>
-                        <td>Kelas 9</td>
+                    <tr data-href="/formUpdateFiturBantuan">
+                        <td>9-1</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
                         <td>6</td>
@@ -270,15 +276,21 @@
                 list[i].className = "list active";
             };
         }
-    </script>
 
-    <!-- untuk table -->
-    <script>
+        // bagian DataTable
         $(document).ready(function() {
-            $("#example").DataTable();
+            $("#mytable").DataTable();
+        });
+
+        // untuk bagian click pada row table masing-masing
+        $(document).ready(function($) {
+            $("*[data-href]").on("click", function() {
+                window.location = $(this).data("href");
+            });
         });
     </script>
-    
+
+
 
 </body>
 

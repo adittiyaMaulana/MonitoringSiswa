@@ -102,22 +102,22 @@
         </nav>
 
         <!-- bagian form -->
-        <div class="pusatbantuan">
+        <div class="pusatbantuan ml-4 mr-4">
             <p>Hallo, ada yang bisa kami bantu ?</p>
+            
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Judul Permasalahan</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Masukan Permasalahan</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+    
+                <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
         </div>
-
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Judul Permasalahan</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Masukan Permasalahan</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Kirim</button>
-        </form>
 
     </div>
 

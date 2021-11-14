@@ -37,6 +37,11 @@ class OrangTuaController extends Controller
         return view('orangtua.berita');
     }
 
+    public function beritaDetail()
+    {
+        return view('orangtua.beritaDetail');
+    }
+
     // nilai
     public function nilai()
     {

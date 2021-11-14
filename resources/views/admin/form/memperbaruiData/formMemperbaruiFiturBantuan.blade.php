@@ -26,7 +26,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 
-    <title>Form Berita</title>
+    <title>Update Fitur Bantuan</title>
 </head>
 
 <body>
@@ -61,7 +61,7 @@
                 </a>
             </li>
 
-            <li class="list active">
+            <li class="list">
                 <a href="/beritaAdmin">
                     <span class="icon">
                         <ion-icon name="newspaper-outline"></ion-icon>
@@ -79,7 +79,7 @@
                 </a>
             </li>
 
-            <li class="list">
+            <li class="list active">
                 <a href="/dokumenFiturBantuan">
                     <span class="icon">
                         <ion-icon name="download-outline"></ion-icon>
@@ -123,7 +123,7 @@
                 <div class="collapse navbar-collapse">
                     <!-- Navbar brand -->
                     <a class="navbar-brand mt-2">
-                        <h4>Pengumuman</h4>
+                        <h4>Update Fitur Bantuan</h4>
                     </a>
                 </div>
 
@@ -218,12 +218,6 @@
         }
     </script>
 
-    <!-- untuk table -->
-    <script>
-        $(document).ready(function() {
-            $("#example").DataTable();
-        });
-    </script>
 
 
 </body>

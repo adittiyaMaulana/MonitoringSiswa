@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/guru/homepageGuru.css">
     <title>Home</title>
 </head>
 
@@ -85,7 +85,7 @@
                             <ion-icon name="chatbox-ellipses" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
                         </span>
                     </a>
- 
+
                     <!-- gambar user -->
                     <a class=" d-flex align-items-center">
                         <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-circle" height="25" alt="" loading="lazy" />
@@ -101,7 +101,7 @@
         </nav>
 
         <!-- ===================================================================== -->
-        <!-- content 1 profile dan finansial -->
+        <!-- content 1 profile dan kehadiran siswa -->
 
         <div class="container1">
             <div class="box">
@@ -110,44 +110,51 @@
                 <div class="profile">
                     <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-circle" height="105" alt="" loading="lazy" />
                     <h4>Username</h4>
-                    <h5 class="nis">NIS</h5>
+                    <h5 class="nis">Nomer induk guru</h5>
                     <h5>Email</h5>
 
                 </div>
             </div>
 
-            <!-- ====================== bagian finansial ========================== -->
+            <!-- ====================== kehadiran siswa ========================== -->
             <div class="box">
-                <div class="finansial_sebagian">
+                <div class="kehadiran_sebagian">
                     <p style="text-align:left;">
-                        History Pembayaran
-                        <a href="#"><span style="float:right;">
-                            Lihat Semua >>>
-                        </span></a>
+                        Kehadiran Siswa
+                        <a href="/kehadiranSiswa"><span style="float:right;">
+                                Lihat Semua >>>
+                            </span></a>
                     </p>
 
                     <table class="table table-borderless">
                         <thead>
                             <tr>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
+                                <th scope="col">NIS</th>
+                                <th scope="col">Nama</th>
+                                <th scope="col">Hadir</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                <td>17283945</td>
+                                <td>
+                                    <p class="limit_kehadiran">teeeeeeeeeeeeeeeeeeeeeeeeeeeeees</p>
+                                </td>
+                                <td>4</td>
                             </tr>
                             <tr>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
+                                <td>17283947</td>
+                                <td>
+                                    <p class="limit_kehadiran">teeeeeeeeeeeeeeeeeeeeeeeeeeeeees</p>
+                                </td>
+                                <td>4</td>
                             </tr>
                             <tr>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
+                                <td>17283960</td>
+                                <td>
+                                    <p class="limit_kehadiran">teeeeeeeeeeeeeeeeeeeeeeeeeeeeees</p>
+                                </td>
+                                <td>4</td>
                             </tr>
                         </tbody>
                     </table>
@@ -159,9 +166,79 @@
         </div>
 
         <!-- ===================================================================== -->
-        <!-- Berita -->
+        <!-- Nilai Siswa -->
 
-        <h3 class="title_berita">Berita</h3>
+        <div class="nilaiSiswa ml-3 mr-5">
+            <div class="boxNilai">
+                <div class="isi">
+                    <p style="text-align:left;">
+                        Nilai Siswa
+                        <a href="/nilaiSiswa"><span style="float:right;">
+                                Lihat Semua >>>
+                            </span></a>
+                    </p>
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">NIS</th>
+                                <th scope="col">Nama Siswa</th>
+                                <th scope="col">Kelas</th>
+                                <th scope="col">UAS</th>
+                                <th scope="col">UTS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>17283945</td>
+                                <td class="name">
+                                    <p class="limit_name_nilai">OTONGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG</p>
+                                </td>
+                                <td>7-1</td>
+                                <td>100</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>17283945</td>
+                                <td class="name">
+                                    <p class="limit_name_nilai">Manusia Biasa</p>
+                                </td>
+                                <td>7-1</td>
+                                <td>100</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>17283945</td>
+                                <td class="name">
+                                    <p class="limit_name_nilai">hai</p>
+                                </td>
+                                <td>7-1</td>
+                                <td>100</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>17283945</td>
+                                <td class="name">
+                                    <p class="limit_name_nilai">hai</p>
+                                </td>
+                                <td>7-1</td>
+                                <td>100</td>
+                                <td>-</td>
+                            </tr>
+                            <tr>
+                                <td>17283945</td>
+                                <td class="name">
+                                    <p class="limit_name_nilai">hai</p>
+                                </td>
+                                <td>7-1</td>
+                                <td>100</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 
 
         <!-- end my-content / semua content -->
@@ -174,10 +251,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-   
+
     <script>
         // menambahkan active class di select list item (agar bisa di select)
         let list = document.querySelectorAll(".list");
