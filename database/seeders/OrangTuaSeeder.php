@@ -16,11 +16,11 @@ class OrangTuaSeeder extends Seeder
         $orang_tua = [
             [
                 'nama' => "Darmi",
-                'ttl' => "07/13/1980",
+                'ttl' => "1980/07/13",
                 'alamat' => "Jl. Cendrawasih"
             ],[
                 'nama' => "Sutomo",
-                'ttl' => "07/13/1970",
+                'ttl' => "1980/07/13",
                 'alamat' => "Jl. Merak"
             ]
         ];
