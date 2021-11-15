@@ -14,7 +14,7 @@ class CreateOrangTuaTable extends Migration
     public function up()
     {
         Schema::create('orang_tua', function (Blueprint $table) {
-            $table->id();
+            $table->id('id');
             $table->timestamps();
             $table->string('nama',50);
             $table->date('ttl');
