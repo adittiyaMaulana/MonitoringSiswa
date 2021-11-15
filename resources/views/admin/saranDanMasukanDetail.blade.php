@@ -3,16 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="{{asset('css/sidebar.css')}}">
-    <link rel="stylesheet" href="{{asset('css/content.css')}}">
-    <link rel="stylesheet" href="{{asset('css/pusatbantuan.css')}}">
-    <title>Pusat Bantuan</title>
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/admin/saranDanBantuan.css">
+
+    <title>Saran dan Masukan</title>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
     <div class="sidebar">
         <ul>
             <li class="list active">
-                <a href="/homepageGuru">
+                <a href="/homepageAdmin">
                     <span class="icon">
                         <ion-icon name="home-outline"></ion-icon>
                     </span>
@@ -30,23 +31,58 @@
             </li>
 
             <li class="list">
-                <a href="/nilaiSiswa">
+                <a href="/jadwalKelasSiswa">
                     <span class="icon">
-                        <ion-icon name="bar-chart-outline"></ion-icon>
+                        <ion-icon name="calendar-outline"></ion-icon>
                     </span>
-                    <span class="title">Nilai Siswa</span>
+                    <span class="title">Jadwal</span>
                 </a>
             </li>
 
             <li class="list">
-                <a href="/kehadiranSiswa">
+                <a href="/finansialSiswa">
                     <span class="icon">
-                        <ion-icon name="create-outline"></ion-icon>
+                        <ion-icon name="wallet-outline"></ion-icon>
                     </span>
-                    <span class="title">Kehadiran Siswa</span>
+                    <span class="title">Finansial</span>
                 </a>
             </li>
 
+            <li class="list">
+                <a href="/beritaAdmin">
+                    <span class="icon">
+                        <ion-icon name="newspaper-outline"></ion-icon>
+                    </span>
+                    <span class="title">Berita</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="/data">
+                    <span class="icon">
+                        <ion-icon name="clipboard-outline"></ion-icon>
+                    </span>
+                    <span class="title">Data</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="/dokumenFiturBantuan">
+                    <span class="icon">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </span>
+                    <span class="title">Fitur Bantuan</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="/tentangSekolahAdmin">
+                    <span class="icon">
+                        <ion-icon name="alert-circle-outline"></ion-icon>
+                    </span>
+                    <span class="title">Tentang</span>
+                </a>
+            </li>
 
             <li class="list">
                 <a href="#">
@@ -74,16 +110,23 @@
                 <div class="collapse navbar-collapse">
                     <!-- Navbar brand -->
                     <a class="navbar-brand mt-2">
-                        <h4>Pusat Bantuan</h4>
+                        <h4>Saran dan Masukan</h4>
                     </a>
                 </div>
 
                 <!-- Right elements -->
                 <div class="d-flex align-items-center">
                     <!-- Icon pengaduan -->
-                    <a class=" d-flex align-items-center mr-3 mt-2" href="/pusatBantuanGuru">
+                    <a class=" d-flex align-items-center mr-3 mt-2" href="/saranDanMasukanAdmin">
                         <span class="icon">
                             <ion-icon name="chatbox-ellipses" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
+                        </span>
+                    </a>
+                    
+                    <!-- Icon pesan -->
+                    <a class=" d-flex align-items-center mr-3 mt-2" href="/pesanAdmin">
+                        <span class="icon">
+                            <ion-icon name="mail" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
                         </span>
                     </a>
 
@@ -94,38 +137,31 @@
 
                     <!-- nama user -->
                     <a class=" d-flex align-items-center ml-3 mt-3" style="text-decoration: none; color: #404040;">
-                        <p>user</p>
+                        <p>Admin</p>
                     </a>
 
                 </div>
             </div>
         </nav>
 
-        <!-- bagian form -->
-        <div class="pusatbantuan ml-4 mr-4">
-            <p>Hallo, ada yang bisa kami bantu ?</p>
-            
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Judul Permasalahan</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Masukan Permasalahan</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-    
-                <button type="submit" class="btn btn-primary">Kirim</button>
-            </form>
+        <div class="content mt-5 ml-4 mr-4">
+            <p class="dari">Dari</p>
+            <p class="namaUser">nama User</p>
+
+            <p class="mt-5">Saran</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatibus quisquam pariatur corrupti facere a eligendi eaque excepturi minima rem est, at earum accusamus ratione officiis possimus deleniti consequatur dolor.</p>
+
+            <p class="mt-5">masukan</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatibus quisquam pariatur corrupti facere a eligendi eaque excepturi minima rem est, at earum accusamus ratione officiis possimus deleniti consequatur dolor.</p>
+
         </div>
 
+
+        <!-- end my-content / semua content -->
     </div>
-
-
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -148,7 +184,6 @@
             };
         }
     </script>
-
 </body>
 
 </html>

@@ -67,9 +67,9 @@ class OrangTuaController extends Controller
     }
 
     // pusatbantuan
-    public function pusatBantuan()
+    public function saranDanMasukan()
     {
-        return view('orangtua.pusatBantuan');
+        return view('orangtua.saranDanMasukan');
     }
 
     // pesan

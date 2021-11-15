@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{asset('css/sidebar.css')}}">
     <link rel="stylesheet" href="{{asset('css/content.css')}}">
     <link rel="stylesheet" href="{{asset('css/pusatbantuan.css')}}">
-    <title>Pusat Bantuan</title>
+    <title>Saran dan Masukan</title>
 </head>
 
 <body>
@@ -118,14 +118,14 @@
                 <div class="collapse navbar-collapse">
                     <!-- Navbar brand -->
                     <a class="navbar-brand mt-2">
-                        <h4>Pusat Bantuan</h4>
+                        <h4>Saran dan Masukan</h4>
                     </a>
                 </div>
 
                 <!-- Right elements -->
                 <div class="d-flex align-items-center">
                     <!-- Icon pengaduan -->
-                    <a class=" d-flex align-items-center mr-3 mt-2" href="/pusatBantuan">
+                    <a class=" d-flex align-items-center mr-3 mt-2" href="/saranDanMasukan">
                         <span class="icon">
                             <ion-icon name="chatbox-ellipses" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
                         </span>
@@ -153,16 +153,15 @@
         </nav>
 
         <!-- bagian form -->
-        <div class="pusatbantuan ml-4 mr-4">
-            <p>Hallo, ada yang bisa kami bantu ?</p>
+        <div class="pusatbantuan ml-4 mr-4 mt-5">
             
             <form>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Judul Permasalahan</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="exampleInputEmail1" class="form-label">Saran</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Masukan Permasalahan</label>
+                    <label for="exampleFormControlTextarea1" class="form-label">Masukan</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
     

@@ -1,0 +1,23 @@
+/* limit text row finansial sebagian di homepage*/
+.limit_name_nilai{
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-style: normal;
+}
+
+.limit_kehadiran{
+    width: 170px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-style: normal;
+}
+
+/* bagian berita */
+.title_berita{
+    padding-top: 10vh;
+    font-weight: 600;
+    padding-left: 3vh;
+}

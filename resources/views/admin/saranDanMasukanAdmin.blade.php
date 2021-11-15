@@ -11,6 +11,10 @@
 
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/admin/homepageAdmin.css">
+    <link rel="stylesheet" href="css/admin/jadwal.css">
+    <link rel="stylesheet" href="css/admin/finansial.css">
+
 
     <!-- Table -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -23,11 +27,10 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 
-    <title>Nilai Siswa</title>
+    <title>Saran dan Bantuan</title>
 </head>
 
 <body>
-
     <!-- css untuk bagian click pada row table -->
     <style>
         [data-href] {
@@ -38,8 +41,8 @@
     <!-- sidebar -->
     <div class="sidebar">
         <ul>
-            <li class="list">
-                <a href="/homepageGuru">
+            <li class="list active">
+                <a href="/homepageAdmin">
                     <span class="icon">
                         <ion-icon name="home-outline"></ion-icon>
                     </span>
@@ -47,24 +50,59 @@
                 </a>
             </li>
 
-            <li class="list active">
-                <a href="/nilaiSiswa">
+            <li class="list">
+                <a href="/jadwalKelasSiswa">
                     <span class="icon">
-                        <ion-icon name="bar-chart-outline"></ion-icon>
+                        <ion-icon name="calendar-outline"></ion-icon>
                     </span>
-                    <span class="title">Nilai Siswa</span>
+                    <span class="title">Jadwal</span>
                 </a>
             </li>
 
             <li class="list">
-                <a href="/kehadiranSiswa">
+                <a href="/finansialSiswa">
                     <span class="icon">
-                        <ion-icon name="create-outline"></ion-icon>
+                        <ion-icon name="wallet-outline"></ion-icon>
                     </span>
-                    <span class="title">Kehadiran Siswa</span>
+                    <span class="title">Finansial</span>
                 </a>
             </li>
 
+            <li class="list">
+                <a href="/beritaAdmin">
+                    <span class="icon">
+                        <ion-icon name="newspaper-outline"></ion-icon>
+                    </span>
+                    <span class="title">Berita</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="/data">
+                    <span class="icon">
+                        <ion-icon name="clipboard-outline"></ion-icon>
+                    </span>
+                    <span class="title">Data</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="/dokumenFiturBantuan">
+                    <span class="icon">
+                        <ion-icon name="download-outline"></ion-icon>
+                    </span>
+                    <span class="title">Fitur Bantuan</span>
+                </a>
+            </li>
+
+            <li class="list">
+                <a href="/tentangSekolahAdmin">
+                    <span class="icon">
+                        <ion-icon name="alert-circle-outline"></ion-icon>
+                    </span>
+                    <span class="title">Tentang</span>
+                </a>
+            </li>
 
             <li class="list">
                 <a href="#">
@@ -92,16 +130,23 @@
                 <div class="collapse navbar-collapse">
                     <!-- Navbar brand -->
                     <a class="navbar-brand mt-2">
-                        <h4>Nilai Siswa</h4>
+                        <h4>Saran dan Bantuan</h4>
                     </a>
                 </div>
 
                 <!-- Right elements -->
                 <div class="d-flex align-items-center">
                     <!-- Icon pengaduan -->
-                    <a class=" d-flex align-items-center mr-3 mt-2" href="/saranDanMasukanGuru">
+                    <a class=" d-flex align-items-center mr-3 mt-2" href="/saranDanMasukanAdmin">
                         <span class="icon">
                             <ion-icon name="chatbox-ellipses" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
+                        </span>
+                    </a>
+
+                    <!-- Icon pesan -->
+                    <a class=" d-flex align-items-center mr-3 mt-2" href="/pesanAdmin">
+                        <span class="icon">
+                            <ion-icon name="mail" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
                         </span>
                     </a>
 
@@ -112,7 +157,7 @@
 
                     <!-- nama user -->
                     <a class=" d-flex align-items-center ml-3 mt-3" style="text-decoration: none; color: #404040;">
-                        <p>user</p>
+                        <p>Admin</p>
                     </a>
 
                 </div>
@@ -135,7 +180,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr data-href="/updateNilaiSiswa">
+                    <tr data-href="/saranDanMasukanDetail">
                         <td>7-1</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
@@ -144,7 +189,7 @@
                         <td>$320,800</td>
                         <td>$320,800</td>
                     </tr>
-                    <tr data-href="/updateNilaiSiswa">
+                    <tr data-href="/saranDanMasukanDetail">
                         <td>9-3</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
@@ -153,7 +198,7 @@
                         <td>$320,800</td>
                         <td>$320,800</td>
                     </tr>
-                    <tr data-href="/updateNilaiSiswa">
+                    <tr data-href="/saranDanMasukanDetail">
                         <td>9-2</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
@@ -162,7 +207,7 @@
                         <td>$320,800</td>
                         <td>$320,800</td>
                     </tr>
-                    <tr data-href="/updateNilaiSiswa">
+                    <tr data-href="/saranDanMasukanDetail">
                         <td>8-1</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
@@ -171,7 +216,7 @@
                         <td>$320,800</td>
                         <td>$320,800</td>
                     </tr>
-                    <tr data-href="/updateNilaiSiswa">
+                    <tr data-href="/saranDanMasukanDetail">
                         <td>7-2</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
@@ -180,7 +225,7 @@
                         <td>$320,800</td>
                         <td>$320,800</td>
                     </tr>
-                    <tr data-href="/updateNilaiSiswa">
+                    <tr data-href="/saranDanMasukanDetail">
                         <td>9-1</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
@@ -193,6 +238,8 @@
                 </tbody>
             </table>
         </div>
+
+
 
 
 
@@ -223,12 +270,10 @@
             };
         }
 
-
-        // untuk bagian tablenya
+        // bagian DataTable
         $(document).ready(function() {
             $("#mytable").DataTable();
         });
-
 
         // untuk bagian click pada row table masing-masing
         $(document).ready(function($) {
@@ -237,6 +282,8 @@
             });
         });
     </script>
+
+
 
 </body>
 

@@ -47,7 +47,7 @@
                 </a>
             </li>
 
-            <li class="list active">
+            <li class="list">
                 <a href="/nilaiSiswa">
                     <span class="icon">
                         <ion-icon name="bar-chart-outline"></ion-icon>
@@ -56,7 +56,7 @@
                 </a>
             </li>
 
-            <li class="list">
+            <li class="list active">
                 <a href="/kehadiranSiswa">
                     <span class="icon">
                         <ion-icon name="create-outline"></ion-icon>
@@ -99,7 +99,7 @@
                 <!-- Right elements -->
                 <div class="d-flex align-items-center">
                     <!-- Icon pengaduan -->
-                    <a class=" d-flex align-items-center mr-3 mt-2" href="/pusatBantuanGuru">
+                    <a class=" d-flex align-items-center mr-3 mt-2" href="/saranDanMasukanGuru">
                         <span class="icon">
                             <ion-icon name="chatbox-ellipses" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
                         </span>

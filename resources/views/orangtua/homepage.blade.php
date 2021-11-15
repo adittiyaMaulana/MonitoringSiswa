@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/orangtua/homepageOrtu.css">
     <title>Home</title>
 </head>
 
@@ -124,7 +125,7 @@
                 <!-- Right elements -->
                 <div class="d-flex align-items-center">
                     <!-- Icon pengaduan -->
-                    <a class=" d-flex align-items-center mr-3 mt-2" href="/pusatBantuan">
+                    <a class=" d-flex align-items-center mr-3 mt-2" href="/saranDanMasukan">
                         <span class="icon">
                             <ion-icon name="chatbox-ellipses" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
                         </span>
@@ -172,7 +173,7 @@
                 <div class="finansial_sebagian">
                     <p style="text-align:left;">
                         History Pembayaran
-                        <a href="#"><span style="float:right;">
+                        <a href="/finansial"><span style="float:right;">
                             Lihat Semua >>>
                         </span></a>
                     </p>
@@ -180,25 +181,32 @@
                     <table class="table table-borderless">
                         <thead>
                             <tr>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
+                                <th scope="col">Pembayaran</th>
+                                <th scope="col">tanggal</th>
+                                <th scope="col">Status</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                <td>
+                                    <p class="limit_kehadiran">teeeeeeeeeeeeeeeeeeeeeeeeeeeeees</p>
+                                </td>
+                                <td>17283945</td>
+                                <td>4</td>
                             </tr>
                             <tr>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
+                                <td>
+                                    <p class="limit_kehadiran">teeeeeeeeeeeeeeeeeeeeeeeeeeeeees</p>
+                                </td>
+                                <td>17283947</td>
+                                <td>4</td>
                             </tr>
                             <tr>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
+                                <td>
+                                    <p class="limit_kehadiran">teeeeeeeeeeeeeeeeeeeeeeeeeeeeees</p>
+                                </td>
+                                <td>17283960</td>
+                                <td>4</td>
                             </tr>
                         </tbody>
                     </table>

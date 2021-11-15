@@ -35,8 +35,8 @@ class GuruController extends Controller
         return view('guru.form.formUpdateKehadiran');
     }
 
-    public function pusatBantuanGuru()
+    public function saranDanMasukanGuru()
     {
-        return view('guru.pusatBantuan');
+        return view('guru.saranDanMasukanGuru');
     }
 }

@@ -55,8 +55,8 @@ Route::get('/tentangSekolah', [OrangTuaController::class, 'tentangSekolah']);
 // pesan
 Route::get('/pesan', [OrangTuaController::class, 'pesan']);
 
-// pusat bantuan
-Route::get('/pusatBantuan', [OrangTuaController::class, 'pusatBantuan']);
+// saranDanMasukan
+Route::get('/saranDanMasukan', [OrangTuaController::class, 'saranDanMasukan']);
 
 
 // *%*%*%*%*%**%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%%*%*%*%%*%*%%*%*%*%%*%*%*%%*%*%*%%*%*%**%*%**%*%*%**%*%*%*%**%*%*%*%*
@@ -77,8 +77,8 @@ Route::get('/updateNilaiSiswa', [GuruController::class, 'updateNilaiSiswa']);
 Route::get('/kehadiranSiswa', [GuruController::class, 'kehadiranSiswa']);
 Route::get('/updatekehadiranSiswa', [GuruController::class, 'updatekehadiranSiswa']);
 
-
-Route::get('/pusatBantuanGuru', [GuruController::class, 'pusatBantuanGuru']);
+// saranDanMasukan
+Route::get('/saranDanMasukanGuru', [GuruController::class, 'saranDanMasukanGuru']);
 
 // *%*%*%*%*%**%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%%*%*%*%%*%*%%*%*%*%%*%*%*%%*%*%*%%*%*%**%*%**%*%*%**%*%*%*%**%*%*%*%*
 // *%*%*%*%*%**%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%%*%*%*%%*%*%%*%*%*%%*%*%*%%*%*%*%%*%*%**%*%**%*%*%**%*%*%*%**%*%*%*%*
@@ -124,7 +124,12 @@ Route::get('/formUpdateFiturBantuan', [AdminController::class, 'formUpdateFiturB
 // tentang sekolah
 Route::get('/tentangSekolahAdmin', [AdminController::class, 'tentangSekolahAdmin']);
 
+//saranDanMasukanAdmin
+Route::get('/saranDanMasukanAdmin', [AdminController::class, 'saranDanMasukanAdmin']);
+Route::get('/saranDanMasukanDetail', [AdminController::class, 'saranDanMasukanDetail']);
 
+//pesan
+Route::get('/pesanAdmin', [AdminController::class, 'pesanAdmin']);
 
 
 // *%*%*%*%*%**%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%*%%*%*%*%%*%*%%*%*%*%%*%*%*%%*%*%*%%*%*%**%*%**%*%*%**%*%*%*%**%*%*%*%*

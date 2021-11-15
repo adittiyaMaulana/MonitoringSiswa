@@ -114,7 +114,17 @@ class AdminController extends Controller
         return view('admin.tentang');
     }
 
-    // fitur pusat bantuan
+    // fitur saranDanMasukanAdmin
+
+    public function saranDanMasukanAdmin()
+    {
+        return view('admin.saranDanMasukanAdmin');
+    }
+
+    public function saranDanMasukanDetail()
+    {
+        return view('admin.saranDanMasukanDetail');
+    }
 
     // fitur pesan
 }
