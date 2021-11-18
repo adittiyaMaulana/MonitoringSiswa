@@ -117,8 +117,52 @@
 
     <div class="my-content">
 
+        <!-- ====================================================================================== -->
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand mt-2">
+                        <h4>Jadwal</h4>
+                    </a>
+                </div>
+
+                <!-- Right elements -->
+                <div class="d-flex align-items-center">
+                    <!-- Icon pengaduan -->
+                    <a class=" d-flex align-items-center mr-3 mt-2" href="/saranDanMasukan">
+                        <span class="icon">
+                            <ion-icon name="chatbox-ellipses" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
+                        </span>
+                    </a>
+
+                    <!-- Icon pesan -->
+                    <a class=" d-flex align-items-center mr-3 mt-2" href="/pesan">
+                        <span class="icon">
+                            <ion-icon name="mail" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
+                        </span>
+                    </a>
+
+                    <!-- gambar user -->
+                    <a class=" d-flex align-items-center">
+                        <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-circle" height="25" alt="" loading="lazy" />
+                    </a>
+
+                    <!-- nama user -->
+                    <a class=" d-flex align-items-center ml-3 mt-3" style="text-decoration: none; color: #404040;">
+                        <p>user</p>
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+
         <!-- navbar pilihan -->
-        <div class="navbar">
+        <div class="navbar ml-4">
             <ul>
                 <li class="isi"><a class="active" href="/jadwalKelas">Akademik</a></li>
                 <li class="isi"><a href="/jadwalNonAkademik">Non Akademik</a></li>
@@ -127,7 +171,7 @@
 
         <!-- table -->
 
-        <div class="my-table mt-5">
+        <div class="my-table mt-5 ml-4">
             <table id="example" class="table table-hover" style="width:100%">
                 <thead class="table-dark">
                     <tr>
@@ -195,11 +239,11 @@
                         <td>$320,800</td>
                         <td>$320,800</td>
                     </tr>
-                    
+
                 </tbody>
             </table>
         </div>
-        
+
     </div>
 
 
@@ -212,10 +256,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
-    
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-   
+
     <script>
         // menambahkan active class di select list item (agar bisa di select)
         let list = document.querySelectorAll(".list");
@@ -233,7 +277,9 @@
     <script>
         $(document).ready(function() {
             $("#example").DataTable({
-                "order": [[ 0, "desc" ]]  //sorting dari besar ke kecil
+                "order": [
+                    [0, "desc"]
+                ] //sorting dari besar ke kecil
             });
         });
     </script>

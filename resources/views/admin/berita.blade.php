@@ -26,8 +26,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 
-
-    <title>Berita</title>
+    <title>Data Siswa</title>
 </head>
 
 <body>
@@ -37,6 +36,7 @@
             cursor: pointer;
         }
     </style>
+
     <!-- ============================================================================================= -->
     <!-- sidebar -->
     <div class="sidebar">
@@ -130,7 +130,7 @@
                 <div class="collapse navbar-collapse">
                     <!-- Navbar brand -->
                     <a class="navbar-brand mt-2">
-                        <h4>Pengumuman</h4>
+                        <h4>Data Siswa</h4>
                     </a>
                 </div>
 
@@ -164,6 +164,7 @@
             </div>
         </nav>
 
+
         <!-- buttonn -->
         <div class="button_area">
             <a href="#"><button type="button" class="btn btn-primary">Kirim<i class="bi bi-send-fill ml-4"></i></button></a>
@@ -183,6 +184,7 @@
                         <th>Start date</th>
                         <th>Salary</th>
                         <th>Salary</th>
+                        <th>aksi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -194,56 +196,89 @@
                         <td>2011/04/25</td>
                         <td>$320,800</td>
                         <td>$320,800</td>
+                        <td>
+                            <a href="#"><i class="bi bi-trash-fill" style="color: black;"></i></a>
+                        </td>
                     </tr>
                     <tr data-href="/formUpdateBerita">
-                        <td>9-3</td>
+                        <td>7-1</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
-                        <td>56</td>
+                        <td>67</td>
                         <td>2011/04/25</td>
                         <td>$320,800</td>
                         <td>$320,800</td>
+                        <td>
+                            <a href="#"><i class="bi bi-trash-fill" style="color: black;"></i></a>
+                        </td>
                     </tr>
                     <tr data-href="/formUpdateBerita">
-                        <td>9-2</td>
+                        <td>7-1</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
-                        <td>66</td>
+                        <td>67</td>
                         <td>2011/04/25</td>
                         <td>$320,800</td>
                         <td>$320,800</td>
+                        <td>
+                            <a href="#"><i class="bi bi-trash-fill" style="color: black;"></i></a>
+                        </td>
                     </tr>
                     <tr data-href="/formUpdateBerita">
-                        <td>8-1</td>
+                        <td>7-1</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
-                        <td>20</td>
+                        <td>67</td>
                         <td>2011/04/25</td>
                         <td>$320,800</td>
                         <td>$320,800</td>
+                        <td>
+                            <a href="#"><i class="bi bi-trash-fill" style="color: black;"></i></a>
+                        </td>
                     </tr>
                     <tr data-href="/formUpdateBerita">
-                        <td>7-2</td>
+                        <td>7-1</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
-                        <td>1</td>
+                        <td>67</td>
                         <td>2011/04/25</td>
                         <td>$320,800</td>
                         <td>$320,800</td>
+                        <td>
+                            <a href="#"><i class="bi bi-trash-fill" style="color: black;"></i></a>
+                        </td>
                     </tr>
                     <tr data-href="/formUpdateBerita">
-                        <td>9-1</td>
+                        <td>7-1</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
-                        <td>6</td>
+                        <td>67</td>
                         <td>2011/04/25</td>
                         <td>$320,800</td>
                         <td>$320,800</td>
+                        <td>
+                            <a href="#"><i class="bi bi-trash-fill" style="color: black;"></i></a>
+                        </td>
                     </tr>
+                    <tr data-href="/formUpdateBerita">
+                        <td>7-1</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>67</td>
+                        <td>2011/04/25</td>
+                        <td>$320,800</td>
+                        <td>$320,800</td>
+                        <td>
+                            <a href="#"><i class="bi bi-trash-fill" style="color: black;"></i></a>
+                        </td>
+                    </tr>
+
+ 
 
                 </tbody>
             </table>
         </div>
+
 
 
 
@@ -275,7 +310,7 @@
             };
         }
 
-        //bagian tabel
+        // untuk bagian DataTable
         $(document).ready(function() {
             $("#mytable").DataTable();
         });
@@ -286,6 +321,9 @@
                 window.location = $(this).data("href");
             });
         });
+    </script>
+
+    <script>
     </script>
 
 

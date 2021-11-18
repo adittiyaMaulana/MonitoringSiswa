@@ -184,6 +184,7 @@
                         <th>Start date</th>
                         <th>Salary</th>
                         <th>Salary</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -195,53 +196,83 @@
                         <td>2011/04/25</td>
                         <td>$320,800</td>
                         <td>$320,800</td>
+                        <td>
+                            <a href="#"><i class="bi bi-trash-fill" style="color: black;"></i></a>
+                        </td>
                     </tr>
                     <tr data-href="/formUpdateData">
-                        <td>9-3</td>
+                        <td>7-1</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
-                        <td>56</td>
+                        <td>67</td>
                         <td>2011/04/25</td>
                         <td>$320,800</td>
                         <td>$320,800</td>
+                        <td>
+                            <a href="#"><i class="bi bi-trash-fill" style="color: black;"></i></a>
+                        </td>
                     </tr>
                     <tr data-href="/formUpdateData">
-                        <td>9-2</td>
+                        <td>7-1</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
-                        <td>66</td>
+                        <td>67</td>
                         <td>2011/04/25</td>
                         <td>$320,800</td>
                         <td>$320,800</td>
+                        <td>
+                            <a href="#"><i class="bi bi-trash-fill" style="color: black;"></i></a>
+                        </td>
                     </tr>
                     <tr data-href="/formUpdateData">
-                        <td>8-1</td>
+                        <td>7-1</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
-                        <td>20</td>
+                        <td>67</td>
                         <td>2011/04/25</td>
                         <td>$320,800</td>
                         <td>$320,800</td>
+                        <td>
+                            <a href="#"><i class="bi bi-trash-fill" style="color: black;"></i></a>
+                        </td>
                     </tr>
                     <tr data-href="/formUpdateData">
-                        <td>7-2</td>
+                        <td>7-1</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
-                        <td>1</td>
+                        <td>67</td>
                         <td>2011/04/25</td>
                         <td>$320,800</td>
                         <td>$320,800</td>
+                        <td>
+                            <a href="#"><i class="bi bi-trash-fill" style="color: black;"></i></a>
+                        </td>
                     </tr>
                     <tr data-href="/formUpdateData">
-                        <td>9-1</td>
+                        <td>7-1</td>
                         <td>System Architect</td>
                         <td>Edinburgh</td>
-                        <td>6</td>
+                        <td>67</td>
                         <td>2011/04/25</td>
                         <td>$320,800</td>
                         <td>$320,800</td>
+                        <td>
+                            <a href="#"><i class="bi bi-trash-fill" style="color: black;"></i></a>
+                        </td>
                     </tr>
-
+                    
+                    <tr data-href="/formUpdateData">
+                        <td>7-1</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>67</td>
+                        <td>2011/04/25</td>
+                        <td>$320,800</td>
+                        <td>$320,800</td>
+                        <td>
+                            <a href="#"><i class="bi bi-trash-fill" style="color: black;"></i></a>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -290,7 +321,6 @@
         });
     </script>
 
-    <!-- untuk table -->
     <script>
     </script>
 
