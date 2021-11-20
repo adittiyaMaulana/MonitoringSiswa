@@ -52,7 +52,7 @@ class AdminController extends Controller
     
     public function formFinansial()
     {
-        return view('admin.formFinansial');
+        return view('admin.form.menambahkanData.formFinansial');
     }
     
     public function formUpdateFinansial()
@@ -125,6 +125,12 @@ class AdminController extends Controller
     {
         return view('admin.saranDanMasukanDetail');
     }
-
+    
     // fitur pesan
+    
+    public function pesanAdmin()
+    {
+        return view('admin.pesan');
+        
+    }
 }

@@ -1,255 +1,228 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.default')
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+@section('title','Homepage')
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+@section('content')
+<!-- ============================================================================================= -->
+<!-- sidebar -->
+<div class="sidebar">
+    <ul>
+        <li class="list active">
+            <a href="/homepage">
+                <span class="icon">
+                    <ion-icon name="home-outline"></ion-icon>
+                </span>
+                <span class="title">Home</span>
+            </a>
+        </li>
 
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/content.css">
-    <link rel="stylesheet" href="css/orangtua/homepageOrtu.css">
-    <title>Home</title>
-</head>
+        <li class="list">
+            <a href="/jadwalKelas">
+                <span class="icon">
+                    <ion-icon name="calendar-outline"></ion-icon>
+                </span>
+                <span class="title">Jadwal</span>
+            </a>
+        </li>
 
-<body>
-    <!-- ============================================================================================= -->
-    <!-- sidebar -->
-    <div class="sidebar">
-        <ul>
-            <li class="list active">
-                <a href="/homepage">
-                    <span class="icon">
-                        <ion-icon name="home-outline"></ion-icon>
-                    </span>
-                    <span class="title">Home</span>
+        <li class="list">
+            <a href="/finansial">
+                <span class="icon">
+                    <ion-icon name="wallet-outline"></ion-icon>
+                </span>
+                <span class="title">Finansial</span>
+            </a>
+        </li>
+
+        <li class="list">
+            <a href="/berita">
+                <span class="icon">
+                    <ion-icon name="newspaper-outline"></ion-icon>
+                </span>
+                <span class="title">Berita</span>
+            </a>
+        </li>
+
+        <li class="list">
+            <a href="/nilai">
+                <span class="icon">
+                    <ion-icon name="bar-chart-outline"></ion-icon>
+                </span>
+                <span class="title">Nilai</span>
+            </a>
+        </li>
+
+        <li class="list">
+            <a href="/kehadiran">
+                <span class="icon">
+                    <ion-icon name="create-outline"></ion-icon>
+                </span>
+                <span class="title">Kehadiran</span>
+            </a>
+        </li>
+
+        <li class="list">
+            <a href="/fiturBantuan">
+                <span class="icon">
+                    <ion-icon name="download-outline"></ion-icon>
+                </span>
+                <span class="title">Fitur Bantuan</span>
+            </a>
+        </li>
+
+        <li class="list">
+            <a href="/tentangSekolah">
+                <span class="icon">
+                    <ion-icon name="alert-circle-outline"></ion-icon>
+                </span>
+                <span class="title">Tentang</span>
+            </a>
+        </li>
+
+        <li class="list">
+            <a href="#">
+                <span class="icon">
+                    <ion-icon name="log-out-outline"></ion-icon>
+                </span>
+                <span class="title">Sign Out</span>
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+<!-- contentt -->
+
+<div class="my-content">
+
+    <!-- ====================================================================================== -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse">
+                <!-- Navbar brand -->
+                <a class="navbar-brand mt-2">
+                    <h4>MOS</h4>
                 </a>
-            </li>
-
-            <li class="list">
-                <a href="/jadwalKelas">
-                    <span class="icon">
-                        <ion-icon name="calendar-outline"></ion-icon>
-                    </span>
-                    <span class="title">Jadwal</span>
-                </a>
-            </li>
-
-            <li class="list">
-                <a href="/finansial">
-                    <span class="icon">
-                        <ion-icon name="wallet-outline"></ion-icon>
-                    </span>
-                    <span class="title">Finansial</span>
-                </a>
-            </li>
-
-            <li class="list">
-                <a href="/berita">
-                    <span class="icon">
-                        <ion-icon name="newspaper-outline"></ion-icon>
-                    </span>
-                    <span class="title">Berita</span>
-                </a>
-            </li>
-
-            <li class="list">
-                <a href="/nilai">
-                    <span class="icon">
-                        <ion-icon name="bar-chart-outline"></ion-icon>
-                    </span>
-                    <span class="title">Nilai</span>
-                </a>
-            </li>
-
-            <li class="list">
-                <a href="/kehadiran">
-                    <span class="icon">
-                        <ion-icon name="create-outline"></ion-icon>
-                    </span>
-                    <span class="title">Kehadiran</span>
-                </a>
-            </li>
-
-            <li class="list">
-                <a href="/fiturBantuan">
-                    <span class="icon">
-                        <ion-icon name="download-outline"></ion-icon>
-                    </span>
-                    <span class="title">Fitur Bantuan</span>
-                </a>
-            </li>
-
-            <li class="list">
-                <a href="/tentangSekolah">
-                    <span class="icon">
-                        <ion-icon name="alert-circle-outline"></ion-icon>
-                    </span>
-                    <span class="title">Tentang</span>
-                </a>
-            </li>
-
-            <li class="list">
-                <a href="#">
-                    <span class="icon">
-                        <ion-icon name="log-out-outline"></ion-icon>
-                    </span>
-                    <span class="title">Sign Out</span>
-                </a>
-            </li>
-
-        </ul>
-    </div>
-
-    <!-- contentt -->
-
-    <div class="my-content">
-
-        <!-- ====================================================================================== -->
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <!-- Container wrapper -->
-            <div class="container-fluid">
-
-                <!-- Collapsible wrapper -->
-                <div class="collapse navbar-collapse">
-                    <!-- Navbar brand -->
-                    <a class="navbar-brand mt-2">
-                        <h4>MOS</h4>
-                    </a>
-                </div>
-
-                <!-- Right elements -->
-                <div class="d-flex align-items-center">
-                    <!-- Icon pengaduan -->
-                    <a class=" d-flex align-items-center mr-3 mt-2" href="/saranDanMasukan">
-                        <span class="icon">
-                            <ion-icon name="chatbox-ellipses" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
-                        </span>
-                    </a>
-                    
-                    <!-- Icon pesan -->
-                    <a class=" d-flex align-items-center mr-3 mt-2" href="/pesan">
-                        <span class="icon">
-                            <ion-icon name="mail" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
-                        </span>
-                    </a>
-
-                    <!-- gambar user -->
-                    <a class=" d-flex align-items-center">
-                        <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-circle" height="25" alt="" loading="lazy" />
-                    </a>
-
-                    <!-- nama user -->
-                    <a class=" d-flex align-items-center ml-3 mt-3" style="text-decoration: none; color: #404040;">
-                        <p>user</p>
-                    </a>
-
-                </div>
-            </div>
-        </nav>
-
-        <!-- ===================================================================== -->
-        <!-- content 1 profile dan finansial -->
-
-        <div class="container1">
-            <div class="box">
-
-                <!-- ==================== bagian profile======================== -->
-                <div class="profile">
-                    <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-circle" height="105" alt="" loading="lazy" />
-                    <h4>Username</h4>
-                    <h5 class="nis">NIS</h5>
-                    <h5>Email</h5>
-
-                </div>
             </div>
 
-            <!-- ====================== bagian finansial ========================== -->
-            <div class="box">
-                <div class="finansial_sebagian">
-                    <p style="text-align:left;">
-                        History Pembayaran
-                        <a href="/finansial"><span style="float:right;">
-                            Lihat Semua >>>
-                        </span></a>
-                    </p>
+            <!-- Right elements -->
+            <div class="d-flex align-items-center">
+                <!-- Icon pengaduan -->
+                <a class=" d-flex align-items-center mr-3 mt-2" href="/saranDanMasukan">
+                    <span class="icon">
+                        <ion-icon name="chatbox-ellipses" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
+                    </span>
+                </a>
 
-                    <table class="table table-borderless">
-                        <thead>
-                            <tr>
-                                <th scope="col">Pembayaran</th>
-                                <th scope="col">tanggal</th>
-                                <th scope="col">Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <p class="limit_kehadiran">teeeeeeeeeeeeeeeeeeeeeeeeeeeeees</p>
-                                </td>
-                                <td>17283945</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="limit_kehadiran">teeeeeeeeeeeeeeeeeeeeeeeeeeeeees</p>
-                                </td>
-                                <td>17283947</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p class="limit_kehadiran">teeeeeeeeeeeeeeeeeeeeeeeeeeeeees</p>
-                                </td>
-                                <td>17283960</td>
-                                <td>4</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <!-- Icon pesan -->
+                <a class=" d-flex align-items-center mr-3 mt-2" href="/pesan">
+                    <span class="icon">
+                        <ion-icon name="mail" style="font-size: 1.3em; color: #D6C8C8;"></ion-icon>
+                    </span>
+                </a>
 
-                </div>
+                <!-- gambar user -->
+                <a class=" d-flex align-items-center">
+                    <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-circle" height="25" alt="" loading="lazy" />
+                </a>
+
+                <!-- nama user -->
+                <a class=" d-flex align-items-center ml-3 mt-3" style="text-decoration: none; color: #404040;">
+                    <p>user</p>
+                </a>
+
             </div>
+        </div>
+    </nav>
 
-            <!-- enddd content 1 -->
+    <!-- ===================================================================== -->
+    <!-- content 1 profile dan finansial -->
+
+    <div class="container1">
+        <div class="box">
+
+            <!-- ==================== bagian profile======================== -->
+            <div class="profile">
+                <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-circle" height="105" alt="" loading="lazy" />
+                <h4>Username</h4>
+                <h5 class="nis">NIS</h5>
+                <h5>Email</h5>
+
+            </div>
         </div>
 
-        <!-- ===================================================================== -->
-        <!-- Berita -->
+        <!-- ====================== bagian finansial ========================== -->
+        <div class="box">
+            <div class="finansial_sebagian">
+                <p style="text-align:left;">
+                    History Pembayaran
+                    <a href="/finansial"><span style="float:right;">
+                            Lihat Semua >>>
+                        </span></a>
+                </p>
 
-        <h3 class="title_berita">Berita</h3>
+                <table class="table table-borderless">
+                    <thead>
+                        <tr>
+                            <th scope="col">Pembayaran</th>
+                            <th scope="col">tanggal</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <p class="limit_kehadiran">teeeeeeeeeeeeeeeeeeeeeeeeeeeeees</p>
+                            </td>
+                            <td>17283945</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="limit_kehadiran">teeeeeeeeeeeeeeeeeeeeeeeeeeeeees</p>
+                            </td>
+                            <td>17283947</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="limit_kehadiran">teeeeeeeeeeeeeeeeeeeeeeeeeeeeees</p>
+                            </td>
+                            <td>17283960</td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                </table>
 
+            </div>
+        </div>
 
-        <!-- end my-content / semua content -->
+        <!-- enddd content 1 -->
     </div>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- ===================================================================== -->
+    <!-- Berita -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <h3 class="title_berita">Berita</h3>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-   
-    <script>
-        // menambahkan active class di select list item (agar bisa di select)
-        let list = document.querySelectorAll(".list");
-        for (let i = 0; i < list.length; i++) {
-            list[i].onclick = function() {
-                let j = 0;
-                while (j < list.length) {
-                    list[j++].className = "list";
-                }
-                list[i].className = "list active";
-            };
-        }
-    </script>
-</body>
+    <div class="berita ml-4 mr-4">
+        <div class="card" style="width: 416px; height: 400px; border-radius: 20px;">
+            <img src="image/school1.jpg" class="card-img-top" style="border-top-left-radius: 20px; border-top-right-radius: 20px;" alt="...">
+            <div class="card-body">
+                <div class="text-berita">
+                    <p class="card-text limit_berita_text" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sed sapiente aut, nihil inventore tempore quidem consectetur autem iste molestiae aliquid quisquam, itaque eaque dolore odit, numquam voluptatum reprehenderit eveniet.</p>
+                </div>
+            </div>
+        </div>
 
-</html>
+    </div>
+
+
+    <!-- end my-content / semua content -->
+</div>
+
+@endsection

@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+body {
+    color: #F0F0F0;
+}
+
 .my-content{
     margin-left: 320px;
 }

@@ -1,15 +1,15 @@
-.navbar ul {
+.navbar_pilihan ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-.navbar li {
+.navbar_pilihan li {
     float: left;
 }
 
-.navbar li a {
+.navbar_pilihan li a {
     display: block;
     color: 404040;
     text-align: center;
@@ -17,7 +17,7 @@
     text-decoration: none;
 }
 
-.navbar .active {
+.navbar_pilihan .active {
     background-color: #8dcff4;
     border-radius: 20px;
 }
